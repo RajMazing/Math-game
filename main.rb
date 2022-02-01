@@ -1,11 +1,10 @@
-require'./players.rb'
+require'./player.rb'
 require './game.rb'
+require './question'
 
-def start_game
-  puts "Weclome to the math game! Are you ready...?"
-  
-  player1 = Player.new(gets.chomp)
-end
+new_game = Game.new('New Game')
+
+new_game.start
 
 
 
